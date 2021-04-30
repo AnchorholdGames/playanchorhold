@@ -1,0 +1,9 @@
+---
+layout: default
+---
+
+{% for characters in site.characters %}
+  <h2>{{ characters.name }}</h2>
+  <p>{{ characters.biography | markdownify }}</p>
+  <a href="{{ characters.url }}">Learn more.</a>
+{% endfor %}
